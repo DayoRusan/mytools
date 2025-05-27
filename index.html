@@ -41,13 +41,14 @@
 
 
         main {
-            max-width: 720px;
-            margin: 2rem auto;
+            width: 500px;
+            height: 400px;
             background-color: var(--bg-color);
             border: 1px solid var(--border-color);
             border-radius: var(--radius);
             padding: 2rem;
             box-shadow: 0 4px 10px var(--shadow);
+            box-sizing: border-box;
         }
 
         h2 {
@@ -71,7 +72,7 @@
             cursor: default;
         }
 
-        li:hovar {
+        li:hover {
             background-color: var(--color-pink);
             color: white;
         }
@@ -101,27 +102,68 @@
         button:hover {
             background-color: #ea580c;
         }
+
+        .main-container {
+            display: flex;
+            gap: 2rem;
+            width: max-content;
+            margin: 2rem auto;
+        }
+
+        @media (max-width: 850px){
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main {
+                width: 100%;
+                max-width: 500px;
+                margin: 1rem auto;
+            }
+        }
+
     </style>
 </head>
 <body>
     <header>My tools</header>
 
+    <div class="main-container">
 
-    <main>
+        <main>
 
-        <h2>To-do リスト</h2>
+            <h2>To-do リスト</h2>
+            
+            <ul>
+                <li>To-do リストを作る</li>
+                <li>GitHub Pagesを整える</li>
+                <li>メール仕分けシステムを設計する</li>
+            </ul>
+
+
+            <button>新しいタスクを追加</button>
         
-        <ul>
-            <li>To-do リストを作る</li>
-            <li>GitHub Pagesを整える</li>
-            <li>メール仕分けシステムを設計する</li>
-        </ul>
+
+        </main>
+
+        <main>
+
+            <h2>別のツール</h2>
+            
+            <ul>
+                <li>タスク管理</li>
+                <li>メモアプリ</li>
+                <li>カレンダー連携</li>
+            </ul>
 
 
-        <button>新しいタスクを追加</button>
-    </main>
+            <button>別ツールを追加</button>
+        
 
+        </main>
     
+    </div>
+
     <footer>&copy; 2025 DayoRusan</footer>
 </body>
 </html>
