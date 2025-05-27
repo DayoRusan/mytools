@@ -14,10 +14,10 @@ https://dayorusan.github.io/mytools/
 
 
 ## 📌 追加コンテンツ
--メール自動仕分け
--LINE風チャットUI
--家計簿
--future vision
--漫画通知
--目標立て
--マイルストーン
+- メール自動仕分け
+- LINE風チャットUI
+- 家計簿
+- future vision
+- 漫画通知
+- 目標立て
+- マイルストーン
